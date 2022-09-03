@@ -1,0 +1,23 @@
+{
+  "name": "init-goat",
+  "version": "1.0.0",
+  "description": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/init-goat/init-core.git"
+  },
+  "bin": {
+    "init-goat": "init-goat.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/init-goat/init-core/issues"
+  },
+  "homepage": "https://github.com/init-goat/init-core#readme",
+  "dependencies": {
+    "shelljs": "^0.8.5",
+    "yargs": "^17.5.1"
+  }
+}
