@@ -1,6 +1,6 @@
 {
   "name": "init-goat",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Greatest Of All Time way to Initialize your project!!!",
   "repository": {
     "type": "git",
@@ -9,7 +9,7 @@
   "bin": {
     "init-goat": "init-goat.js"
   },
-  "keywords": ["initializer", "react", "cli", "npm"],
+  "keywords": ["initializer", "react", "cli", "npm", "initialize", "graphql", "express", "mongodb3"],
   "author": "Clement Chang",
   "license": "MIT",
   "bugs": {
