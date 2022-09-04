@@ -4,7 +4,6 @@ const argv = require('yargs')
 const version = require('./package.json').version
 
 const react = require('./tools/react')
-const apollo = require('./tools/apollo')
 const apolloExpress = require('./tools/apollo-express')
 
 console.log("\nInit Goat Starts!\n")
@@ -45,10 +44,16 @@ argv.scriptName("init-goat")
                 demandOption: false,
                 type: "String",
                 default: "./",
-                nargs: 1
+            },
+            mongodb: {
+                alias: "m",
+                describe: "Add MongoDB connector initialization",
+                demandOption: false,
+                boolean: true,
+                default: false
             }
         },
         handler(argv) {
-            apolloExpress(argv.path)
+            apolloExpress(argv.path, argv.mongodb)
         }
     }).strict().argv
