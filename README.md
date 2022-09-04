@@ -31,7 +31,7 @@ init-goat -h
 ```
 
 ## Authors
-*Clement Chang
+* Clement
 
 ## Version History
 * 0.1
