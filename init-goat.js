@@ -5,6 +5,7 @@ const version = require('./package.json').version
 
 const react = require('./tools/react')
 const apollo = require('./tools/apollo')
+const apolloExpress = require('./tools/apollo-express')
 
 console.log("\nInit Goat Starts!\n")
 
@@ -34,13 +35,13 @@ argv.scriptName("init-goat")
             react(argv.path)
         }
     }).command({
-        command: "apollo",
-        describe: "Initialize Apollo Server",
+        command: "apollo-express",
+        describe: "Initialize Apollo Server with Express",
         demandOption: true,
         builder: {
             path: {
                 alias: "p",
-                describe: "Path to create the Apollo Server",
+                describe: "Path to create the Apollo Server with Express",
                 demandOption: false,
                 type: "String",
                 default: "./",
@@ -48,6 +49,6 @@ argv.scriptName("init-goat")
             }
         },
         handler(argv) {
-            apollo(argv.path)
+            apolloExpress(argv.path)
         }
     }).strict().argv
